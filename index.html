@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/png" href="./icons/worker.png" />
+  </head>
+  <body>
+    <h1>Hema Sutar</h1>
+    <div class="mainSection">
+      <p class="headline">
+        I build clean, responsive, and user-friendly web experiences
+      </p>
+      <p class="selfIntro">
+        I’m a frontend developer focused on building modern websites using React
+        and clean UI principles. I enjoy combining development, design, and user
+        thinking to create meaningful products.
+      </p>
+      <div class="infoBox">
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=hemasutargmail2003@gmail.com"
+          target="_blank"
+          class="contact"
+        >
+          <img src="./icons/email.png" />
+          <span class="contactSpan">hemasutar2003@gmail.com</span>
+        </a>
+
+        <a
+          href="https://linkedin.com/in/hemasutar"
+          target="_blank"
+          class="contact"
+        >
+          <img src="./icons/linkedin-logo.png" />
+          <span class="contactSpan">linkedin.com/in/hemasutar</span>
+        </a>
+      </div>
+      <div class="buttons">
+        <a
+          href="https://wa.me/918591078978?text=Hi%20I%20saw%20your%20portfolio"
+          target="_blank"
+          id="contactBtn"
+        >
+          Contact Me
+        </a>
+        <a href="./Hema_Sutar_resume.pdf" id="dwlBtn" download
+          ><span>Download Resume</span>
+          <img src="./icons/cloud-download.png " alt="download icons " />
+        </a>
+      </div>
+    </div>
+    <h3>Recent Projects</h3>
+    <p class="myWork">Interested in working together or hiring me ?</p>
+    <div class="projectSection">
+      <div class="projects">
+        <div class="projectImg">
+          <img
+            src="./img/asset_manager_ss.PNG"
+            alt="asset manager image"
+            onclick="openImage(this.src)"
+            title="click to enlarge"
+          />
+        </div>
+        <div class="proDetails">
+          <h4>Asset Manager</h4>
+          <p>
+            AssetManager to manage assets with filtering, CRUD operations and
+            live charts along with clean UI.
+          </p>
+          <div class="projectBtns">
+            <a
+              id="openDemo"
+              class="demo"
+              data-video="./videos/asset_manager_demo.mp4"
+              >View Demo</a
+            >
+            <a
+              href="https://github.com/codebyhema/Asset_Manager"
+              target="_blank"
+              class="demo"
+              >Git Hub</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="projects">
+        <div class="projectImg">
+          <img
+            src="./img/gharwala_ss.PNG"
+            alt="Quotation system image"
+            onclick="openImage(this.src)"
+            title="click to enlarge"
+          />
+        </div>
+        <div class="proDetails">
+          <h4>Quotation Solution</h4>
+          <p>React-based Quotation web app built with HTML, CSS, JavaScript.</p>
+          <div class="projectBtns">
+            <a
+              id="openDemo"
+              class="demo"
+              data-video="./videos/gharwala_demo.mp4"
+              >View Demo</a
+            >
+            <a
+              href="https://github.com/codebyhema/Quotation-react-frontend"
+              target="_blank"
+              class="demo"
+              >Git Hub</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Image Modal -->
+    <div id="imgModal" class="img-modal" onclick="closeImage()">
+      <img id="modalImg" />
+    </div>
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <span id="closeDemo" class="close">&times;</span>
+        <video id="demoVideo" controls>
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <!--what i Do (skills section)-->
+    <h2><span id="color">What I </span>&nbsp;Do</h2>
+    <p class="mySkillInfo">
+      Building responsive websites using HTML, CSS, JavaScript, and React with
+      modern best practices.
+    </p>
+    <div class="skillSection">
+      <div class="skills">
+        <img src="./icons/code.png" id="codeIcon" />
+        <div class="title">Web Development</div>
+        <p class="description">
+          crafting fast, accessible, and responsive web interfaces using moderen
+          HTML, CSS, Javascript.
+        </p>
+        <div class="tags">
+          <span>&bull; &nbsp;Responsive Layout</span>
+          <span>&bull; &nbsp; Clean UI</span>
+        </div>
+      </div>
+      <div class="skills">
+        <img src="./icons/figma.png" id="figmaIcon" />
+        <div class="title">UI / UX Design</div>
+        <p class="description">
+          Designing clean, intuitive interfaces in Figma with focus on user
+          experiences and usability.
+        </p>
+        <div class="tags">
+          <span>&bull; &nbsp;Wireframing</span>
+          <span>&bull; &nbsp; Prototyping</span>
+          <span>&bull; &nbsp; Figma</span>
+        </div>
+      </div>
+      <div class="skills">
+        <img src="./icons/creative-idea.png" id="ProductIcon" />
+        <div class="title">Product Thinking</div>
+        <p class="description">
+          Approaching problems from user's perspective to plan features and
+          flows to solve real problems
+        </p>
+        <div class="tags">
+          <span>&bull; &nbsp;User Research</span>
+          <span>&bull; &nbsp; Problem Solving</span>
+          <span>&bull; &nbsp; Ux Strategy</span>
+        </div>
+      </div>
+    </div>
+    <script src="portfolio.js"></script>
+  </body>
+</html>
