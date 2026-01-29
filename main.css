@@ -8,9 +8,11 @@
   --p-color: #f5f5f57a;
 }
 @font-face {
-  font-family: "Montserrat";
-  src: url(./font/Geologica-VariableFont_CRSV\SHRP\slnt\wght.ttf);
-  font-weight: 400;
+  font-family: "Geologica";
+  src: url("./font/Geologica.ttf") format(truetype);
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 html {
   font-size: 16px;
@@ -19,7 +21,7 @@ html {
 body {
   background-color: var(--bg-color);
   overflow-x: hidden;
-  font-family: "Montserrat";
+  font-family: "Geologica", system-ui, sans-serif;
 }
 *,
 *::before,
@@ -31,7 +33,7 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: clamp(1rem, 2vw, 2rem);
-  font-size: clamp(2rem, 6vw, 3rem);
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
   color: var(--accent-color);
   font-weight: 600;
 }
@@ -53,7 +55,7 @@ h1 {
   max-width: 600px;
   text-align: center;
   padding: 0rem 1rem 1rem 1rem;
-  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   color: var(--text-color);
 }
 .selfIntro {
@@ -62,7 +64,7 @@ h1 {
   max-width: 600px;
   text-align: center;
   padding: 0 1rem;
-  font-size: clamp(0.5rem, 2vw, 1rem);
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
   color: var(--p-color);
   line-height: 1.5rem;
 }
@@ -99,7 +101,7 @@ h1 {
 }
 .contactSpan {
   /* padding: clamp(8px, 2vw, 16px); */
-  font-size: clamp(0.65rem, 1.5vw, 0.9rem);
+  font-size: clamp(0.65rem, 1vw, 0.9rem);
   text-align: center;
   line-height: 1.2;
   /* word-break: break-word; */
@@ -121,6 +123,7 @@ h1 {
   gap: 20px;
   justify-content: center;
   align-items: center;
+  font-size: clamp(0.65rem, 1.5vw, 0.9rem);
 }
 #contactBtn {
   cursor: pointer;
